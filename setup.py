@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="sa-notebook-builder",
-    version="0.1.dev1",
+    version="0.1.dev2",
     author="András Kohlmann",
     author_email="metuoku@outlook.com",
     description="Building jupyter notebooks from code",
