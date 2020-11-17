@@ -1,4 +1,10 @@
 language: python
-
 script:
-  - pytest
+- pytest
+deploy:
+  provider: pypi
+  username: __token__
+  password:
+    secure: HAMJAgWhmjYRLEqTLv/9WM9ERTFrfTCRvrSjMP14zp/Be8z/pMO9Mo187y25/FvZ93RGIadTZ5R7ZV/fLHya6SUBCQQlLytoowJQM+s+IuS57I83vgz2ynntmTznR51nFXREK/q53LgbFzIIuPKODLmDJ9MCbNsXfHb78bZBvE6DESjby+yM/8XOK6cJ9c20MC3FvS79x1FSZcrrennA0SWDBG87w7n3b+fP/ErRNR/mVdG7FAnZxsKd7V/1zbeNv8xvgD4fGDb5lFo2IZPLxXiU+OQyvmjIgR6OBGAf+QWS30j8FxEYlBBtNzN+ipKmsrCl/JvognirPQpsySJEoMkXLj/VzGsmu5HY2i6dLv2NvLyMYUq4dBvcjZ3XchZWtl8VrTHBhESb3OfunAFJ+Fw+lEfPWDVrkQLaKTPBdsW05REitHEnQlV8ZNhDJCAbhjve54DdwYwmaTx/h4Zw8OBoK4V6uiAyjxPIpYLhOZ0nDyVMWGv6HiVFiyDfmt8DzbNLRiuXMCpiqvfD1vqLht4/DJgTNPEu8ixUG/ztnnip1xURsJ/84GdeKeD92Fz9tc7CGf7uSUyHao8C1HMyldQ2N6gs1XWweBWV1lbJEeqsDkhm9e8JyZlTodpTO0uR66wlJWLNfdf79fp4TbUezRScDw1CDMGPaZgXwt43qSo=
+  on:
+    tags: true
