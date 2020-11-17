@@ -1,6 +1,6 @@
 language: python
 script:
-- pytest
+- python -m pytest tests
 deploy:
   provider: pypi
   username: __token__
