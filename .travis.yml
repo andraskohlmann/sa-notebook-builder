@@ -1,6 +1,9 @@
-language: python
+services:
+  - docker
+install:
+  - docker build -t sa_notebook_builder .
 script:
-- python -m pytest tests
+  - docker run --rm sa_notebook_builder
 deploy:
   provider: pypi
   username: __token__
